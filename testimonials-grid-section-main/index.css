@@ -35,7 +35,7 @@ p{
 }
 
 .box{
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     padding: 1.5em;
     border-radius: 5px;
 }
@@ -102,4 +102,19 @@ p{
 .description{
     margin-top:1em;
 }
+
+@media only screen and (max-width: 720px) {
+    body{
+        overflow: visible;
+        height:100%;
+    }
+    .container {
+      background-color: lightblue;
+      grid-template-columns: 1% auto 1%;
+      grid-template-rows: 2fr 1fr 1fr 1fr 2fr;
+    }
+    .box{
+        grid-column: 2/span 1;
+    }
+  }
 
