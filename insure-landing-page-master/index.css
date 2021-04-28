@@ -1,0 +1,52 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Karla';
+}
+
+body{
+    height:100vh;
+}
+
+.container{
+    height:100%;
+}
+
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height:12.5%;
+    font-family: 'DM Serif Display';
+}
+
+.navBar img{
+    height:1em;
+    cursor: pointer;
+}
+
+.navBar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.navLink{
+    margin-right: 2em;
+    cursor: pointer;
+}
+
+.btn{
+    padding:0.75em;
+    width:10em;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.btn:hover{
+    color:white;
+    background-color: hsl(270, 9%, 17%);
+}
