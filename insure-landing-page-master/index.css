@@ -1,41 +1,46 @@
 *{
     padding: 0%;
     margin: 0%;
-    font-family: 'Karla';
+    /* font-family: 'Karla'; */
 }
 
 body{
     height:100vh;
+    font-family: 'Karla';
+
 }
 
 .container{
     height:100%;
 }
 
-.navBar{
+.nav-bar{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content:space-between;
     align-items: center;
     height:12.5%;
     font-family: 'DM Serif Display';
 }
 
-.navBar img{
+.nav-bar img{
     height:1em;
     cursor: pointer;
+    margin-left:10%;
 }
 
-.navBar ul{
+.nav-bar ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    margin-right: 10%;
 }
 
 .navLink{
     margin-right: 2em;
     cursor: pointer;
+    color:hsl(270, 9%, 17%)
 }
 
 .btn{
@@ -49,4 +54,52 @@ body{
 .btn:hover{
     color:white;
     background-color: hsl(270, 9%, 17%);
+}
+
+.different-section{
+    height:50%;
+}
+
+.different-section h2{
+    margin-left: 10%;
+    font-size: 2.5em;
+    font-weight: 700;
+    grid-column-start: 1;
+    font-family: 'DM Serif Display',cursive;
+}
+
+.perks{
+    display: grid;
+    gap:5%;
+    grid-template-columns: 5% 1fr 1fr 1fr 5%;
+    grid-auto-rows: auto;
+}
+
+.perk-column img{
+    margin-top:3em;
+}
+
+.perk-column h3{
+    margin-top:1em;
+    color:hsl(270, 9%, 17%)
+}
+
+.perk-column p{
+    margin-top:0.75em;
+    color:hsl(273, 4%, 51%)
+}
+
+.perk-column-1{
+    grid-column: 2/span 1;
+}
+.perk-column-2{
+    grid-column: 3/span 1;
+}
+.perk-column-3{
+    grid-column: 4/span 1;
+}
+
+.perk-image{
+    width:4em;
+    height:4em;
 }
