@@ -143,6 +143,7 @@ body{
     margin-top:3em;
 }
 
+
 .perk-column h3{
     margin-top:1em;
     color:hsl(270, 9%, 17%)
@@ -168,6 +169,37 @@ body{
     height:4em;
 }
 
+
+/* How we work classes */
+
+.how-we-work{
+    margin:10%;
+    color:white;
+    background-color: hsl(256, 26%, 20%);
+    height:33%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.how-we-work h2{
+    font-size: 3em;
+    margin-left:10%;
+    width:50%;
+}
+
+.how-we-work .btn{
+    color:white;
+    border:1px solid white;
+    margin-right: 10%;
+}
+
+.how-we-work .btn:hover{
+    color:hsl(256, 26%, 20%);
+    background-color: white;
+}
+
+
 /* Footer section classes*/
 
 hr{
@@ -191,7 +223,7 @@ footer{
     grid-column: 2/-1;
 }
 
-.footer-container img{
+.footer-logo{
     grid-column: 2/span 1;
 }
 
@@ -200,8 +232,14 @@ footer{
 }
 
 .social-icon{
+    filter:brightness(100%);
     padding-left:1em;
     cursor: pointer;
+}
+
+.social-icon:hover{
+    filter:brightness(25%);
+    transition: all 0.5s ease;
 }
 
 .misc-information{
@@ -242,4 +280,8 @@ footer{
     color:hsl(270, 9%, 17%);
     padding-bottom: 0.75em;
     cursor: pointer;
+}
+
+.misc-option:hover{
+    text-decoration: underline;
 }
