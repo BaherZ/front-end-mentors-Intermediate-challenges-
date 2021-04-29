@@ -7,8 +7,10 @@
 body{
     height:100vh;
     font-family: 'Karla';
+    overflow-x: hidden;
 
 }
+
 
 .container{
     height:100%;
@@ -58,54 +60,7 @@ body{
     background-color: hsl(270, 9%, 17%);
 }
 
-/* Perks section class */
 
-.different-section{
-    height:50%;
-}
-
-.different-section h2{
-    margin-left: 10%;
-    font-size: 2.5em;
-    font-weight: 400;
-    font-family: 'DM Serif Display';
-}
-
-.perks{
-    display: grid;
-    gap:5%;
-    grid-template-columns: 5% 1fr 1fr 1fr 5%;
-    grid-auto-rows: auto;
-}
-
-.perk-column img{
-    margin-top:3em;
-}
-
-.perk-column h3{
-    margin-top:1em;
-    color:hsl(270, 9%, 17%)
-}
-
-.perk-column p{
-    margin-top:0.75em;
-    color:hsl(273, 4%, 51%)
-}
-
-.perk-column-1{
-    grid-column: 2/span 1;
-}
-.perk-column-2{
-    grid-column: 3/span 1;
-}
-.perk-column-3{
-    grid-column: 4/span 1;
-}
-
-.perk-image{
-    width:4em;
-    height:4em;
-}
 
 /* Main section class */
 
@@ -162,4 +117,104 @@ body{
 .main-text button:hover{
     color:hsl(256, 26%, 20%);
     background-color: white;
+}
+
+/* Perks section class */
+
+.different-section{
+    height:50%;
+}
+
+.different-section h2{
+    margin-left: 10%;
+    font-size: 2.5em;
+    font-weight: 400;
+    font-family: 'DM Serif Display';
+}
+
+.perks{
+    display: grid;
+    gap:5%;
+    grid-template-columns: 5% 1fr 1fr 1fr 5%;
+    grid-auto-rows: auto;
+}
+
+.perk-column img{
+    margin-top:3em;
+}
+
+.perk-column h3{
+    margin-top:1em;
+    color:hsl(270, 9%, 17%)
+}
+
+.perk-column p{
+    margin-top:0.75em;
+    color:hsl(273, 4%, 51%)
+}
+
+.perk-column-1{
+    grid-column: 2/span 1;
+}
+.perk-column-2{
+    grid-column: 3/span 1;
+}
+.perk-column-3{
+    grid-column: 4/span 1;
+}
+
+.perk-image{
+    width:4em;
+    height:4em;
+}
+
+/* Footer section classes*/
+
+hr{
+    background-color: hsl(0, 0%, 98%);
+}
+footer{
+    background-color: hsl(0, 0%, 98%);
+}
+
+.footer-container{
+    margin:10%;
+}
+
+.social{
+    display: flex;
+    justify-content: space-between;
+    padding-top:1em;
+    padding-bottom: 1em;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-icon{
+    padding-left:1em;
+    cursor: pointer;
+}
+
+.misc-information{
+    display: flex;
+    justify-content: space-between;
+}
+
+.information-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.misc-header{
+    color:hsl(216, 30%, 68%);
+    padding-bottom:1.5em;
+}
+
+.misc-option{
+    color:hsl(270, 9%, 17%);
+    padding-bottom: 0.75em;
+    cursor: pointer;
 }
