@@ -14,12 +14,14 @@ body{
     height:100%;
 }
 
+/* Navbar section class */
+
 .nav-bar{
     display: flex;
     flex-direction: row;
     justify-content:space-between;
     align-items: center;
-    height:12.5%;
+    height:10%;
     font-family: 'DM Serif Display';
 }
 
@@ -56,6 +58,8 @@ body{
     background-color: hsl(270, 9%, 17%);
 }
 
+/* Perks section class */
+
 .different-section{
     height:50%;
 }
@@ -63,9 +67,8 @@ body{
 .different-section h2{
     margin-left: 10%;
     font-size: 2.5em;
-    font-weight: 700;
-    grid-column-start: 1;
-    font-family: 'DM Serif Display',cursive;
+    font-weight: 400;
+    font-family: 'DM Serif Display';
 }
 
 .perks{
@@ -102,4 +105,61 @@ body{
 .perk-image{
     width:4em;
     height:4em;
+}
+
+/* Main section class */
+
+.main-section{
+    display: grid;
+    height:80%;
+    column-gap: 2em;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows: 10% auto 12.5% 12.5%;
+}
+
+.test{
+    background-color: hsl(256, 26%, 20%);
+    grid-row: 1/span 3;
+    grid-column: 1/-1;
+}
+
+.main-text{
+    grid-column: 2/span 1;
+    grid-row: 2/span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-section img{
+    grid-column:3/span 1;
+    grid-row: 2/-1;
+    object-fit: contain;
+    width:75%;
+}
+
+.main-text h1{
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size:4em;
+    color: white;
+    line-height: 1em;
+    margin-bottom: 0.25em;
+}
+
+.main-text p{
+    color:white;
+    line-height: 1.5em;
+    margin-bottom:1em;
+} 
+
+.main-text button{
+    color:white;
+    border:1px solid white;
+    margin-bottom: 1em;
+}
+
+.main-text button:hover{
+    color:hsl(256, 26%, 20%);
+    background-color: white;
 }
