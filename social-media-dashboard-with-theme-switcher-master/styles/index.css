@@ -2,3 +2,46 @@ body{
     font-family: 'Inter';
     font-size: 0.875rem;
 }
+
+h1{
+    margin-bottom:0;
+    font-size: 1.5rem;
+}
+
+.container{
+    margin-left: 10%;
+    margin-right:10%;
+}
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboard-followers{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-cards-container{
+    width:100%;
+    display: grid;
+    grid-template: 1fr/ repeat(4,1fr);
+    /* column-gap: 2.5%; */
+}
+
+
+.main-card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Overview section */
+
+.overview-cards-container{
+    display: grid;
+    grid-template: 1fr 1fr/ repeat(4,1fr);
+    gap:0.25em;
+}
