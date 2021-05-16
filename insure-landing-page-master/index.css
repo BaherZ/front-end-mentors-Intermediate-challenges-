@@ -28,6 +28,8 @@ body{
     position: sticky;
 }
 
+
+
 .nav-bar label, #hamburger{
     display: none;
 }
@@ -128,7 +130,7 @@ body{
 /* Perks section class */
 
 .different-section{
-    /* height:60%; */
+
 }
 
 .different-section h2{
@@ -303,21 +305,46 @@ footer{
     }
 
     .nav-bar{
+        display: block;
         height:auto;
         min-height:10%;
     }
 
+    .nav-bar img{
+        padding-top:2em;
+    }
 
     .nav-bar input:checked ~ .linksContainer { 
         display: flex;
         flex-direction: column; 
-        height:300px;
+        align-items: center;
+        justify-content: center;
+        height:10em;
+        text-decoration: none;
     }
     
+
+    .nav-bar input:checked ~ ul{
+        list-style-type:none;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+    .nav-bar input:checked ~  ul li{
+        text-decoration: none;
+        border:0;
+        padding-left:10px;
+        margin: 0 auto;
+        display: inline-block;
+        padding-top:0.25em;
+      }
+
     .nav-bar label{ 
-        position:absolute;
+        position:absolute; 
         right:0%;
-        top:25%;
+        top:1em;
         display: inline-block; 
         color: hsl(270, 9%, 17%);
         border: 1px solid hsl(270, 9%, 17%);
@@ -342,7 +369,7 @@ footer{
     .nav-bar img{
         margin-left:1em;
     }
-
+    
     .main-section{
         display: grid;
         grid-template-columns: 100%;
@@ -363,9 +390,9 @@ footer{
         grid-column: 1/span 1;
         text-align: center;
         justify-content: flex-start;
+        align-items: center;
         padding-left:1em;
         padding-right:1em;
-        align-items: center;
     }
 
     .main-text h1{
@@ -413,7 +440,13 @@ footer{
         margin:5%;
     }
 
+    footer{
+        height:100%;
+        overflow-y:visible;
+    }
+    
     .footer-container{
+        /* height:100vh; */
         display: flex;
         flex-direction: column;
         justify-content: center;
