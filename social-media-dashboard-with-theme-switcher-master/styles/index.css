@@ -92,12 +92,37 @@ h1{
 .people-type{
     letter-spacing: 0.25em;
     margin-top:0.2em;
+    color:hsl(228, 12%, 44%)
 }
 
 /* Overview section */
 
+.overview-section{
+    height:70%;
+}
+
 .overview-cards-container{
     display: grid;
-    grid-template: 1fr 1fr/ repeat(4,1fr);
-    gap:0.25em;
+    grid-template: 25% 25%/ repeat(4,1fr);
+    gap:1em;
+    height:100%;
+}
+
+.overview-card{
+    border-radius: 5px;
+    height:100%;
+    background-color: hsl(227, 47%, 96%);
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.metric-name{
+    color:hsl(228, 12%, 44%);
+    font-size:0.875em
+}
+
+.metric-count{
+    font-size:1.5em;
+    font-weight: 700;
 }
