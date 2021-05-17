@@ -109,7 +109,7 @@ span{
 
 .triangle-down + span{
     color:hsl(356, 69%, 56%);
-    padding-left:0.25em
+    margin-left:0.25em
 }
 
 .triangle-up + span{
@@ -123,7 +123,6 @@ span{
 	border-left: 4px solid transparent;
 	border-right: 4px solid transparent;
 	border-bottom: 7px solid hsl(163, 72%, 41%);
-    /* padding-right: 1em; */
     margin-right:0.25em;
 }
 
