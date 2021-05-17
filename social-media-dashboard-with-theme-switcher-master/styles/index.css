@@ -155,7 +155,15 @@ span{
     background-color: hsl(227, 47%, 96%);
     display: flex;
     justify-content: space-around;
-    align-items:center;
+}
+
+.metric-social{
+    display: flex;
+    flex-direction: column;
+}
+.metric-container{
+    display: flex;
+    flex-direction: column;
 }
 
 .metric-name{
