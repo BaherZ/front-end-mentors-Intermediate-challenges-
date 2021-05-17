@@ -154,11 +154,13 @@ span{
     background-color: hsl(227, 47%, 96%);
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .metric-social{
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
 }
 .metric-container{
     display: flex;
@@ -167,10 +169,20 @@ span{
 
 .metric-name{
     color:hsl(228, 12%, 44%);
-    font-size:0.875em
+    font-size:0.875em;
+    margin-bottom: 0.75em;
 }
 
 .metric-count{
     font-size:1.5em;
     font-weight: 700;
+    margin-top:0.75em;
+}
+
+.social-icon{
+    margin-bottom: 0.75em;
+}
+
+.metric-percentage{
+    margin-top:0.75em;
 }
