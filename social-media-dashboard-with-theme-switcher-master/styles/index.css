@@ -9,11 +9,16 @@ h1{
     font-size: 1.5rem;
 }
 
+span{
+    font-size: 0.875em;
+}
+
 .container{
     margin-left: 10%;
     margin-right:10%;
     height:100%;
 }
+
 
 .main-header{
     display: flex;
@@ -93,6 +98,42 @@ h1{
     letter-spacing: 0.25em;
     margin-top:0.2em;
     color:hsl(228, 12%, 44%)
+}
+
+.percentage-container{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+
+.triangle-down + span{
+    color:hsl(356, 69%, 56%);
+    padding-left:0.25em
+}
+
+.triangle-up + span{
+    color:hsl(163, 72%, 41%);
+    margin-left:0.25em;
+}
+
+.triangle-up{
+    width: 0;
+	height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-bottom: 7px solid hsl(163, 72%, 41%);
+    /* padding-right: 1em; */
+    margin-right:0.25em;
+}
+
+.triangle-down{
+    width: 0;
+	height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 7px solid hsl(356, 69%, 56%);
+    margin-right: 0.25em;
 }
 
 /* Overview section */
