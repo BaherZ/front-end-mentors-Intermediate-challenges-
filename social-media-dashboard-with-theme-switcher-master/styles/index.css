@@ -23,6 +23,8 @@ span{
 .main-header{
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 2em;
 }
 
 .dashboard-followers{
@@ -32,6 +34,16 @@ span{
 
 .dark-mode{
     display: flex;
+    align-items: center;
+}
+
+.dark-mode p{
+    margin-right:1em;
+}
+
+.subtitle{
+    color:hsl(228, 12%, 44%);
+    font-size: 0.875em;
 }
 
 .main-cards-container{
@@ -139,6 +151,10 @@ span{
 
 .overview-section{
     height:70%;
+}
+
+.overview-section h3{
+    font-size:1.20rem;
 }
 
 .overview-cards-container{
