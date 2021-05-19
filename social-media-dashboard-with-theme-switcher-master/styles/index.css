@@ -19,6 +19,7 @@ body{
     font-size: 0.875rem;
     height:100vh;
     background-color: var(--bg-color);
+    overflow:hidden;
 }
 
 h1{
