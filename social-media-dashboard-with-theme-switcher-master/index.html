@@ -20,18 +20,18 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="theme-target">
   <div class="container"> 
     <div class="main-header">
       <div class="dashboard-followers">
-        <h1>Social Media Dashboard</h1>
+        <h1 class="theme-target">Social Media Dashboard</h1>
         <p class="subtitle">Total Followers: 23,004</p>
       </div>
-      <div class="dark-mode">
+      <div class="dark-toggle">
         <p class="subtitle">Dark Mode</p>
         <label class="switch">
-          <input type="checkbox">
-          <span class="slider round"></span>
+          <input id="switch-input" type="checkbox" value="light">
+          <span class="slider round inverted"></span>
         </label>
       </div>
     </div>
@@ -89,7 +89,7 @@
     </div>
 <!-- OVERVIEW SECTION -->
     <div class="overview-section">
-      <h3>Overview-today</h3>
+      <h3 class="theme-target">Overview-today</h3>
       <div class="overview-cards-container">
         <div class="overview-card">
           <div class="metric-container">
@@ -220,4 +220,5 @@
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
 </body>
+<script src="./index.js"></script>
 </html>
