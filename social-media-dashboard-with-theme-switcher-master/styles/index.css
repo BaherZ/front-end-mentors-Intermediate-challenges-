@@ -225,3 +225,32 @@ span{
 .metric-percentage{
     margin-top:0.75em;
 }
+
+@media only screen and (max-width:720px) {
+    body{
+        overflow-y: visible;
+    }
+    .main-cards-container{
+        grid-template: repeat(4,1fr)/1fr;
+        row-gap: 2.5%;
+        column-gap:0%;
+        height:100%;
+    }
+
+    .overview-section{
+        height:100%;
+    }
+	
+    .overview-cards-container{
+        grid-template: repeat(8,1fr)/ 1fr;
+        row-gap:1em;
+    }
+
+    .main-header{
+        flex-direction: column;
+    }
+    .dark-toggle{
+        justify-content: space-between;
+        width:100%;
+    }
+}
