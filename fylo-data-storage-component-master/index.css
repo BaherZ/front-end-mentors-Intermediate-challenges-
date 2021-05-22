@@ -18,8 +18,17 @@ body{
     font-family: 'Raleway';
 }
 
+.black{
+    color:black;
+    font-size: 1.5rem;
+}
+
 .bold{
     font-weight: 700;
+}
+
+.grey-text{
+    color:hsl(229, 7%, 55%)
 }
 
 .container{
@@ -90,6 +99,7 @@ body{
     background-color: var(--card-color);
     border-radius: 10px;
     align-self: flex-end;
+    position: relative;
 }
 
 .loading-container{
@@ -122,10 +132,42 @@ body{
     border-radius: 50%;
     background-color: white;
     right:0em;
+    cursor:grab;
 }
 
 .bar-values{
     display: flex;
     justify-content: space-between;
 }
+
+.tooltip{
+    position: absolute;
+    background-color: white;
+    height:3.5em;
+    width:8em;
+    border-radius: 0.5rem 0.5rem 0rem 0.5rem;
+    top:-1.75em;
+    right:12.5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.tooltip::after {
+    content:'';
+    display:block;
+    width:0;
+    height:0;
+    position:absolute;
+
+    border-top: 1em solid transparent;
+    border-bottom: 1em solid transparent;
+    border-right: 1em solid white;
+
+    right:0em;
+    top:2.5em;
+  }
 
