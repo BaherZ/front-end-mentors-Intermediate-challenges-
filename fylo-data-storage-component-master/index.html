@@ -6,10 +6,8 @@
     <!-- displays site properly based on user's device -->
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
     <link
       rel="icon"
@@ -46,9 +44,11 @@
         </div>
         <div class="loading-card">
           <div class="loading-container">
-            <p>You’ve used 815 GB of your storage</p>
+            <p>You’ve used <span class="bold">815 GB</span> of your storage</p>
             <div class="loading-bar">
-              <div class="progress"></div>
+              <div class="progress">
+                <div class="circle"></div>
+              </div>
             </div>
             <div class="bar-values">
               <span>0GB</span>

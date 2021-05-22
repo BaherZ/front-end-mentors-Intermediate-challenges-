@@ -18,6 +18,10 @@ body{
     font-family: 'Raleway';
 }
 
+.bold{
+    font-weight: 700;
+}
+
 .container{
     display: flex;
     align-items: center;
@@ -85,8 +89,43 @@ body{
     height: 8rem;
     background-color: var(--card-color);
     border-radius: 10px;
+    align-self: flex-end;
 }
 
 .loading-container{
+    display: flex;
+    flex-direction: column;
+    gap:0.75em;
     margin-left:7.5%;
+    width:80%;
 }
+
+
+.loading-bar {
+    height:1em;
+    background-color: #0c122c;
+    border-radius: 1.5em;
+}
+  
+.progress {
+    height:1em;
+    width:80%;
+    background:linear-gradient(to right, #ffa399, #ff4d97);
+    border-radius: 1.5em;
+    position: relative;
+}
+  
+.circle {
+    position: absolute;
+    height:1em;
+    width:1em;
+    border-radius: 50%;
+    background-color: white;
+    right:0em;
+}
+
+.bar-values{
+    display: flex;
+    justify-content: space-between;
+}
+
