@@ -1,0 +1,92 @@
+:root{
+    --main-bg-color:hsl(229, 57%, 11%);
+    --loading-color:linear-gradient( hsl(6, 100%, 80%) to hsl(335, 100%, 65%));
+    --card-color:hsl(228, 56%, 26%);
+}
+
+* { 
+    margin:0;
+    padding:0;
+    box-sizing: border-box; 
+}
+
+body{
+    min-height:100vh;
+    height:100vh;
+    background-color: var(--main-bg-color);
+    color:white;
+    font-family: 'Raleway';
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+    width:100%;
+}
+
+.cards-container{
+    display: flex;
+    gap:1em;
+}
+
+
+/* Options card */
+
+.options-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 18rem;
+    height: 12rem;
+    background-color: var(--card-color);
+    border-radius: 10px 100px 10px 10px;
+}
+
+.options-container{
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    height:50%;
+    margin-left:15%;
+    justify-content: space-between;
+}
+
+.logo{
+    height:2em;
+    width:6em;
+}
+
+.icons-section{
+    display: flex;
+    width:50%;
+    flex-direction: row;
+    align-items: baseline;
+    gap:20px;
+    background-color: var(--card-color);
+}
+
+
+.icon{
+    background-color: var(--main-bg-color);
+    padding:0.5em;
+    border-radius: 5px;;
+}
+
+/* Loading card */
+
+.loading-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30rem;
+    height: 8rem;
+    background-color: var(--card-color);
+    border-radius: 10px;
+}
+
+.loading-container{
+    margin-left:7.5%;
+}
