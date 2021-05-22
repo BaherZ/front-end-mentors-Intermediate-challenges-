@@ -169,5 +169,40 @@ body{
 
     right:0em;
     top:2.5em;
-  }
+}
+
+@media only screen and (max-width:720px) {
+    .container{
+        width:100%;
+        padding:1em;
+        
+    }
+    .cards-container{
+        flex-direction: column;
+        width:100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .options-card{
+        width:90%;
+    }
+
+    .loading-card{
+        width:90%;
+        align-self: center;
+        text-align: center;
+    }
+
+    .tooltip{
+        border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+        top:6em;
+        bottom:0em;
+        right:33%;
+    }
+
+    .tooltip::after{
+        border:transparent
+    }
+}
 
