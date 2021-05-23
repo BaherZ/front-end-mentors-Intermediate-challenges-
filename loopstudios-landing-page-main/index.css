@@ -61,3 +61,35 @@ body{
     line-height: 1.25em;
     margin-top:2em;
 }
+
+/* ABOUT SECTION */
+
+.about-section{
+    /* height:75%; */
+    padding:7em;
+    display: grid;
+    grid-template:40% 20% 40%/50% 10% 40%;
+}
+
+.about-image{
+    grid-column: 1/3;
+    grid-row:1/-1
+}
+
+.about-text{
+    grid-column: 2/-1;
+    grid-row:2/-1;
+    color:black;
+    background-color: white;
+    padding:5em;
+}
+
+.about-header{
+    font-family: 'Josefin Sans';
+    letter-spacing: 0.1em;
+}
+
+.about-paragraph{
+    font-family: 'Josefin Sans';
+    padding-top:2em;
+}
