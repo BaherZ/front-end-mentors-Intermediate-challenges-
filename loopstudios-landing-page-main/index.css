@@ -13,4 +13,51 @@
 
 body{
     font-size:0.9375rem;
+    min-height: 100vh;
+    height:100vh;
+}
+
+.container{
+    height: 100%;
+}
+
+.hero{
+    height:80%;
+    background-image: url(./images/desktop/image-hero.jpg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    color:white;
+    padding:5em;
+    padding-top:2em;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-container{
+    display: flex;
+    gap:1em;
+    font-family: 'Alata';
+}
+
+.nav-link{
+    cursor: pointer;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+}
+
+.hero-text{
+    font-family: 'Josefin Sans';
+    padding:1em;
+    border: 1px solid white;
+    width:40%;
+    font-size: 2.25rem;
+    letter-spacing: 0.2em;
+    line-height: 1.25em;
+    margin-top:2em;
 }
