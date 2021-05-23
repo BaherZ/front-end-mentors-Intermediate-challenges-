@@ -179,6 +179,7 @@ body{
     grid-column: 4/-1;
     display: flex;
     gap:10px;
+    margin-left:6em;
 }
 
 .social-icon{
