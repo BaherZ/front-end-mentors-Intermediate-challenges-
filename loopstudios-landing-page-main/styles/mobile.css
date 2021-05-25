@@ -30,5 +30,15 @@
     .nav-container{
         display: none;
     }
+    .nav-container-mobile{
+        display: none;
+        justify-content: space-between;
+        margin-top:1em;
+        font-style: italic;
+    }
+
+    .show{
+        display: flex;
+    }
     
 }

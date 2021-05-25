@@ -45,6 +45,11 @@ body{
     color:white;
 }
 
+.nav-container-mobile{
+    display: none;
+}
+
+
 .nav-link{
     cursor: pointer;
 }
