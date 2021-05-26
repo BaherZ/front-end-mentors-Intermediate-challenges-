@@ -5,21 +5,21 @@
     }
 
     .hero{
-        padding-left:1em;
+        width:100%;
+        padding:2em;
         background-image: url(../images/mobile/image-hero.jpg);
     }
 
     .hero-text{
         font-size: 0.85rem;
-        line-height: 2em;
+        line-height: 3em;
         width:100%;
         padding:1.5em;
         margin-top:50%;
-        margin-left:2%;
-        }
+    }
 
     .logo{
-        width:45%;
+        width:35%;
     }
 
     .nav{
@@ -33,12 +33,40 @@
     .nav-container-mobile{
         display: none;
         justify-content: space-between;
-        margin-top:1em;
+        padding-top:1em;
         font-style: italic;
     }
 
     .show{
         display: flex;
+    }
+
+    .about-section{
+        padding:2em;
+        grid-template-columns: 100%;
+        grid-template-rows: 0.5fr 1.5fr;
+    }
+
+    .about-image{
+        width:100%;
+        grid-column: 1/-1;
+        grid-row:1/2
+    }
+
+    .about-text{
+        text-align: center;
+        grid-column:1/-1;
+        grid-row:2/-1;
+        padding:0;
+        padding-top:2em;
+    }
+
+    .about-paragraph{
+        padding-top:1em;
+    }
+
+    .creation-section{
+        text-align: center;
     }
     
 }
