@@ -67,6 +67,31 @@
 
     .creation-section{
         text-align: center;
+        padding:1em;
+    }
+
+    .creations-grid{
+        grid-template-columns: auto;
+        grid-template-rows : repeat(8,1fr);
+    }
+
+    .creation-image{
+        width:100%;
+        object-fit: contain;
+    }
+
+    .image-text{
+        bottom:1em;
+        font-size:1.5rem;
+    }
+
+    .see-all{
+        display: none;
+    }
+
+    .see-all-mobile{
+        display: flex;
+        justify-content: center;
     }
     
 }
