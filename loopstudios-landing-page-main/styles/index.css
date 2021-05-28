@@ -13,17 +13,14 @@
 
 body{
     font-size:0.9375rem;
-    min-height: 100vh;
-    height:100vh;
     overflow-x: hidden;
 }
 
 .container{
-    height: 100%;
+    min-height: 100vh;
 }
 
 .hero{
-    height:80%;
     background-image: url(../images/desktop/image-hero.jpg);
     background-size: 100vw;
     background-repeat: no-repeat;
@@ -175,7 +172,6 @@ body{
 
 .footer-section{
     width:100vw;
-    height:22.5%;
     background-color: black;
     padding:2em 7em;
 
@@ -190,6 +186,10 @@ body{
     display: flex;
     gap:10px;
     margin-left:6em;
+}
+
+.footer-section .nav-container{
+    grid-row:2
 }
 
 .social-icon{
